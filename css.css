@@ -1,0 +1,153 @@
+
+html{
+  margin: 0;
+  background-color: #2e2e2e;
+  color: #d0d0d0;
+  height: 100%;
+}
+
+body{
+  height: 65%;
+  font-family: 'Kalam', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#header{
+text-align: center;
+font-size: 30px;
+text-shadow: 0 5px 10px #0a0a0a;
+}
+main{
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main button{
+  margin: 10px;
+}
+button{
+  padding: 0 90px;
+  height: 120px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 5px 10px #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover{
+  transition-duration: .4s;
+  transform: scale(104%);
+  filter: grayscale(0);
+}
+a{
+  text-decoration: none;
+}
+#classic{
+  background-image: url(https://wallpapers.com/images/hd/classical-music-1600-x-900-wallpaper-wgc0sm1bdstlwc2l.jpg);
+}
+.classic{
+  color: #f2a414;
+  text-shadow: 2px 2px 2px #f5f5f5;
+  font-family: 'Junge', cursive;
+  font-weight: 900;
+  font-size: 50px;
+}
+#rock{
+  background-image: url(https://www.connollycove.com/wp-content/uploads/2022/11/Irish-rock-music-scaled.jpg);
+}
+.rock{
+  font-family: 'Rock Salt', cursive;
+  color: red;
+  text-shadow: 1px 2px 3px #0a0a0a;
+  font-size: 50px;
+}
+#nordic{
+  background-image: url(https://media.istockphoto.com/id/1255042749/video/dark-runic-symbols-motion-background.jpg?s=640x640&k=20&c=kzK33VMlzxEGiPyH8tyi7-A0EZ5Uplj4mtYg7bd2bbA=);
+}
+.nordic{
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  color: #eba612;
+}
+
+#lo-fi{
+  background-image: url(https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2022/09/15/04964401-037d-434c-88d4-765f2e8ddd1f_5b91181c.jpg);
+}
+.lo-fi{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  color: #f5f5f5;
+  text-shadow: 1px 3px 2px #0a0a0a;
+}
+footer{
+  width: 40%;
+  height: fit-content;
+  border-radius: 70px 70px 0 0;
+  box-shadow: inset 0 5px 10px #222222;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media all and (max-width: 1270px){
+  footer{
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 912px){
+  main{
+    margin-top: 0;
+  }
+  #header{
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 840px){
+  main button{
+    padding: 0 40px;
+    height: 80px;
+    width: 150px;
+  }
+  .classic, .nordic, .rock, .lo-fi{
+    font-size: 25px;
+  }
+  footer{
+    border-radius: 55px 55px 0 0;
+  }
+}
+@media all and (max-width: 580px){
+  footer{
+    border-radius: 45px 45px 0 0;
+  }
+  footer img{
+    width: 30px;
+  }
+}
+
+@media all and (max-width: 460px){
+  main button{
+    padding: 0 20px;
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .classic, .nordic, .rock, .lo-fi{
+    font-size: 25px;
+  }
+  footer{
+    font-size: 10px;
+  }
+}
